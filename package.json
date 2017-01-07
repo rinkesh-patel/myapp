@@ -18,6 +18,9 @@
     "express-handlebars": "*",
     "express-messages": "*",
     "express-validator": "*",
-    "bcryptjs": "*"
+    "bcryptjs": "*",
+    "bcrypt-nodejs" : "*",
+    "passport" : "*",         
+    "passport-local" : "*"
   }
 }

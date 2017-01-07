@@ -5,13 +5,35 @@ var Schema = mongoose.Schema;
 
 var user = new Schema(
     {
-        username: String,
-        password: String,
-        name: String,
-        age: Number,
-        admin: Boolean
-    }
-);
+        username: 
+        { 
+            type: String,
+            required: true,
+            unique: true
+        },
+        password: 
+        { 
+            type: String,
+            require: true
+        },
+        name: 
+        { 
+            type: String
+        },
+        age: 
+        { 
+            type: Number
+        },
+        admin: 
+        { 
+            type: Boolean,
+            default: true 
+        }
+    },
+        {
+        timestamps: true
+        
+    });
 
 
 // set up a mongoose model and pass it using module.exports
